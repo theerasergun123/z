@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Editor</title>
+</head>
+<body>
+    <h1>Text Editor V1.0</h1>
+    <h2>Welcome To The Online Text Editor! Enjoy!</h2>
+    <div class="Tools">
+        <button id="left" onclick="leftit(text)">Left</button>
+        <button id="center" onclick="centerit(text)">Center</button>
+        <button id="right" onclick="rightit(text)">Right</button>
+        <button id="bold" onclick="boldit(text)"><strong>B</strong></button>
+        <button id="Italic" onclick="italicit(text)"> <i>I</i> </button>
+        <select id="font" onchange="fontit(text)">
+            <option value="Arial">Arial</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Times">Times</option>
+            <option value="Georgia">Georgia</option>
+        </select>
+        <select id="size" onchange="sizeit(text)">
+            <option value="14">Small</option>
+            <option value="24">Medium</option>
+            <option value="40">Large</option>
+        </select>
+        <textarea id="text" ></textarea>
+    </div>
+    
+
+
+</body>
+<script src="main.js"></script>
+</html>
